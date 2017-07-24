@@ -1,8 +1,8 @@
-## Store the inverse of a matrix into cache memory to be used later without
-## needing to recalculate the inverse. 
+## The two functions below store the inverse of a matrix into cache memory 
+## to be used later without needing to recalculate the inverse. 
 
-## Creates an R object that stores a matrix and its inverse. An argument of 
-## makeCacheMatrix is required for use in cacheSolve.
+## makeCacheMatrix creates an R object that stores a matrix and its inverse. 
+## An argument of makeCacheMatrix is required for use in cacheSolve.
 
 makeCacheMatrix <- function(x = matrix()) {
         #initialize inverse matrix m as NULL
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Requires an argument returned by makeCacheMatrix.  This functions
+## cacheSolve requires an argument returned by makeCacheMatrix.  cacheSolve
 ## will check to see if the inverse of the matrix is already stored in cache.
 ## If so, cached inverse matrix will be returned. If not, the inverse of the
 ## matrix will be calculated, returned, and stored to the cached data. 
